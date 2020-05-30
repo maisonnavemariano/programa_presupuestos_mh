@@ -68,6 +68,12 @@ public class Main extends Application {
     	File A = new File("reportes/tmp/");
     	File B = new File("borradores/tmp/");
     	
+        if (! A.exists())
+            A.mkdirs();
+        
+        if (! B.exists())
+            B.mkdirs();
+        
     	for(File file: A.listFiles()) 
     	    if (!file.isDirectory()) 
     	        file.delete();

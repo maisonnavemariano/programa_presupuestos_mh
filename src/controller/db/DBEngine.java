@@ -33,7 +33,8 @@ import javafx.beans.property.SimpleStringProperty;
  */
 public class DBEngine {
 	protected final String myDriver = "com.mysql.jdbc.Driver";
-	protected final String myUrl  = "jdbc:mysql://192.168.1.12/programa_facturacion_mh"; 
+	//protected final String myUrl  = "jdbc:mysql://192.168.1.12/programa_facturacion_mh"; 
+	protected final String myUrl  = "jdbc:mysql://localhost/programa_facturacion_mh"; 
 	
 	protected int ProximoNumeroPresupuesto; // para poder ofrecer el proximo numero presupuesto.
 	protected Connection conn;
