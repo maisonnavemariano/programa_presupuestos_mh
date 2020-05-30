@@ -1,3 +1,4 @@
-bin/
-reportes/
-borradores/
+/bin/*
+/reportes/*
+/borradores/*
+/reports_templates/*jrprint
