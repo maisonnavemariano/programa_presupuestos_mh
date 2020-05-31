@@ -32,7 +32,7 @@ public class ReportsEngine {
 
 	private static void generarResumen(ResumenBean resumen, String url) {
 
-		String sourceFile = "reports_templates/Resumen_cuenta.jasper";
+		String sourceFile = "reports_templates/Resumen_cuenta_simple.jasper";
 		
 		List<TransaccionBean> dataList = resumen.getTransacciones();
 
@@ -82,7 +82,7 @@ public class ReportsEngine {
 	private static String generarResumen(ResumenBean resumen) {
 		boolean salida_ok=false;
 
-		String sourceFile = "reports_templates/Resumen_cuenta.jasper";
+		String sourceFile = "reports_templates/Resumen_cuenta_simple.jasper";
 		String salida = "reportes/tmp/"+resumen.getDenominacion()+"_"+resumen.getDesde()+"_"+resumen.getHasta()+".pdf";
 	    SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
 
