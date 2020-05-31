@@ -140,7 +140,7 @@ public class ReportsEngine {
 	
 	public static String generarReporte(Presupuesto p) {
 	boolean salida_ok=false;
-	String sourceFile = "reports_templates/Original_y_copia.jasper";
+	String sourceFile = "reports_templates/Original.jasper";
 	String salida = "reportes/tmp/"+p.getCliente().getDenominacion()+"-"+p.getNroPresupuesto()+".pdf";
 	List<ConceptosBean> dataList = new ArrayList<ConceptosBean>();
 	
@@ -231,7 +231,7 @@ public class ReportsEngine {
 	}
 	
 	public static void generarReporte(Presupuesto p, String url) {
-		String sourceFile = "reports_templates/Original_y_copia.jasper";
+		String sourceFile = "reports_templates/Original.jasper";
 		List<ConceptosBean> dataList = new ArrayList<ConceptosBean>();
 		
 		ConceptosBean cb;
@@ -272,7 +272,7 @@ public class ReportsEngine {
 	
 	
 	public static String generarJRprintReport(Presupuesto p) {
-		String sourceFile = "reports_templates/Original_y_copia.jasper";
+		String sourceFile = "reports_templates/Original.jasper";
 		List<ConceptosBean> dataList = new ArrayList<ConceptosBean>();
 		
 		ConceptosBean cb;
