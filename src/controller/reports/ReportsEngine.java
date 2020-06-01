@@ -277,7 +277,7 @@ public class ReportsEngine {
 		
 		ConceptosBean cb;
 		for (Concepto c: p.getConceptos()) {
-			cb = new ConceptosBean();
+			cb = new ConceptosBean();	
 			cb.setDescripcion(c.getConcepto());
 			cb.setMonto(c.getMonto());
 			dataList.add(cb);
